@@ -1,0 +1,10 @@
+#!name = NCalc Fx
+#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/NCalcFx.png
+[Rule]
+DOMAIN-SUFFIX,ncalcfx.com,Proxy
+DOMAIN-SUFFIX,ncalcfxapi.com,Proxy
+DOMAIN-SUFFIX,ncalcfx.net,Proxy
+HOST,api.ncalcfx.com,Proxy
+
+[Mitm]
+hostname = *.ncalcfx.com, api.ncalcfx.com
