@@ -1,4 +1,5 @@
 #!name=建工计算器
+#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/Jgjsq.png
 
 [Script]
 http-response ^https?:\/\/calc\.kuaicad\.com\/authority\/verify_vip script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jgjsq.js, requires-body=true, tag=建工计算器VIP解锁
