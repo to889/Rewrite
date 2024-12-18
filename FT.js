@@ -1,5 +1,5 @@
 #!name = FT中文网
-#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ft.png
+#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/FT.png
 
 [Script]
 http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js, requires-body=true, timeout=10, tag=FT中文网
