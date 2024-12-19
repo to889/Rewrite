@@ -1,4 +1,5 @@
 #!name = 恋小语VIP
+#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/lxy.png
 
 [Script]
 http-response ^https?:\/\/api\.love\.823123\.com\/facades\/ad_space\.index script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/lxy.js, requires-body=false, timeout=10
