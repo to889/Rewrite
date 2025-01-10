@@ -2,7 +2,7 @@
 #!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/BaiduCloud.png
 
 [Script]
-http-response ^https?:\/\/pan.baidu.com.+(rest\/.+\/membership\/user|api\/user\/getinfo|act\/v2\/welfare\/list|api\/taskscore\/tasklist)\? script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/panda.js, requires-body=true, timeout=10
+http-response ^https?:\/\/pan.baidu.com.+(rest\/.+\/membership\/user|api\/user\/getinfo|act\/v2\/welfare\/list|api\/taskscore\/tasklist)\? script-path=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/BaiduCloud.js, requires-body=true, timeout=10
 
 [Mitm]
 hostname = pan.baidu.com
