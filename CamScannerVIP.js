@@ -2,7 +2,7 @@
 #!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/CamScanner.png
 
 [Script]
-http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com)\/(purchase\/cs\/query_property|queryProperty|getPrivilegeItem) script-path=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/CamScannerVIP.js, requires-body=true, timeout=10, tag=CamScanner VIP Unlock
+http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com)\/(purchase\/cs\/query_property|queryProperty|getPrivilegeItem) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, timeout=10, tag=CamScanner VIP Unlock
 
 [MITM]
 hostname = *.camscanner.com, *.intsig.net
