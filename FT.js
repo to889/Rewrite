@@ -3,7 +3,7 @@
 
 [Script]
 # 拦截 FT 中文网的开屏广告和解锁会员
-http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall$ script-path=https://raw.githubusercontent.com/user/loon_ft_ads.js, requires-body=true, timeout=10, tag=FT中文网
+http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall$ script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js, requires-body=true, timeout=10, tag=FT中文网
 http-response ^https:\/\/www\.ftchinese\.com\/index\.html$ script-path=https://raw.githubusercontent.com/user/loon_ft_ads.js, requires-body=true, timeout=10
 
 [Mitm]
