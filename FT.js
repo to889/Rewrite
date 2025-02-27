@@ -12,9 +12,14 @@ http-response ^https:\/\/www\.ftchinese\.com\/index\.html$ script-path=https://r
 http-response ^https:\/\/www\.ftchinese\.com\/m\/ad\/(index|start).json$ reject-200
 http-response ^https:\/\/www\.ftchinese\.com\/ad\/.*$ reject-200
 http-response ^https:\/\/ads.*\.ftchinese\.com\/.*$ reject-200
+http-response ^https:\/\/ftmailbox\.cn\/ad_impression\/.*$ reject-200
+
+# 拦截 Google Ads 相关广告脚本
+http-response ^https:\/\/securepubads\.g\.doubleclick\.net\/pagead\/managed\/js\/gpt\/.* reject-200
+http-response ^https:\/\/securepubads\.g\.doubleclick\.net\/pagead\/ppub_config.* reject-200
 
 [Mitm]
-hostname = *.cloudfront.net, *.ftchinese.com, ads.ftchinese.com
+hostname = *.cloudfront.net, *.ftchinese.com, ads.ftchinese.com, ftmailbox.cn, securepubads.g.doubleclick.net
 
 let body = $response.body;
 
@@ -48,6 +53,12 @@ try {
 
         // 4. 屏蔽开屏广告
         body = body.replace(/"splashAd":\s*{.*?}/gs, '"splashAd":{}');
+    }
+
+    if (url.includes("/ad_impression/")) {
+        // 拦截广告统计上报请求
+        $done({ body: "{}" });
+        return;
     }
 } catch (e) {
     console.log("FT中文网脚本错误：" + e);
