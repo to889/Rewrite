@@ -10,9 +10,11 @@ http-response ^https:\/\/www\.ftchinese\.com\/index\.html$ script-path=https://r
 
 # 拦截广告 API 请求，防止广告加载
 http-response ^https:\/\/www\.ftchinese\.com\/m\/ad\/(index|start).json$ reject-200
+http-response ^https:\/\/www\.ftchinese\.com\/ad\/.*$ reject-200
+http-response ^https:\/\/ads.*\.ftchinese\.com\/.*$ reject-200
 
 [Mitm]
-hostname = *.cloudfront.net, *.ftchinese.com
+hostname = *.cloudfront.net, *.ftchinese.com, ads.ftchinese.com
 
 let body = $response.body;
 
@@ -43,6 +45,9 @@ try {
 
         // 3. 删除本地存储中的广告信息
         body = body.replace(/window\.localStorage\.setItem\(["']adData["'],.*?\);/gs, "");
+
+        // 4. 屏蔽开屏广告
+        body = body.replace(/"splashAd":\s*{.*?}/gs, '"splashAd":{}');
     }
 } catch (e) {
     console.log("FT中文网脚本错误：" + e);
