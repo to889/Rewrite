@@ -5,8 +5,11 @@
 # 会员解锁
 http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall$ script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js, requires-body=true, timeout=10, tag=FT中文网
 
-# 去开屏广告
+# 去除开屏广告 & 其他广告
 http-response ^https:\/\/www\.ftchinese\.com\/index\.html$ script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js, requires-body=true, timeout=10
+
+# 拦截广告 API 请求，防止广告加载
+http-response ^https:\/\/www\.ftchinese\.com\/m\/ad\/(index|start).json$ reject-200
 
 [Mitm]
 hostname = *.cloudfront.net, *.ftchinese.com
@@ -31,9 +34,15 @@ try {
     }
 
     if (url.includes("/index.html")) {
-        // 去除 FT 中文网的开屏广告
-        body = body.replace(/<div[^>]*class="ad-container"[^>]*>.*?<\/div>/gs, ""); // 删除广告 HTML
-        body = body.replace(/"ads":\s*\[.*?\]/gs, '"ads":[]'); // 清空 JSON 里的广告数据
+        // 1. 删除 HTML 里的广告标签
+        body = body.replace(/<div[^>]*class=["']?ad-container["']?[^>]*>.*?<\/div>/gs, ""); 
+        body = body.replace(/<script[^>]*src=["']https?:\/\/.*?ad.*?\.js["'][^>]*>.*?<\/script>/gs, ""); 
+
+        // 2. 清空 JSON 里的广告数据
+        body = body.replace(/"ads":\s*\[.*?\]/gs, '"ads":[]');
+
+        // 3. 删除本地存储中的广告信息
+        body = body.replace(/window\.localStorage\.setItem\(["']adData["'],.*?\);/gs, "");
     }
 } catch (e) {
     console.log("FT中文网脚本错误：" + e);
