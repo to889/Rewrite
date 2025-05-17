@@ -1,8 +1,7 @@
 #!name = Decibel X
-#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/DecibelX.png
 
 [Script]
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/DecibelX.js, requires-body=true, timeout=10
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/Adguard/DecibelX.js, requires-body=true, timeout=10
 
 [Mitm]
 hostname = buy.itunes.apple.com
