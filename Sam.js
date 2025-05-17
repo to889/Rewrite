@@ -1,4 +1,5 @@
 #!name = Sam's
+#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/Sam.png
 
 [Rewrite]
 ^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get) - reject
