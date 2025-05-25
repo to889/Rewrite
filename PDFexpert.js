@@ -1,5 +1,5 @@
 #!name = PDFexpert VIP
-#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/PDFexpert.png
+#!icon=https://raw.githubusercontent.com/to889/Loon/refs/heads/Loon/PDFexpert.png
 
 [Script]
 http-request ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/pdfexpert6\/subscription\/refresh script-path=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/PDFexpert.js, requires-body=true, timeout=10
