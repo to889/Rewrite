@@ -1,5 +1,5 @@
 #!name=flomo
-#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/flomo.png
+#!icon=https://raw.githubusercontent.com/to889/Loon/refs/heads/Loon/flomo.png
 
 [Script]
 http-response ^https:\/\/flomoapp\.com\/api\/v1\/user\/me script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/flomo.js, requires-body=true, timeout=10
