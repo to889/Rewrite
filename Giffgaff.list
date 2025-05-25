@@ -1,0 +1,14 @@
+#!name = Giffgaff
+#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/Giffgaff.png
+
+# Giffgaff
+DOMAIN-SUFFIX,giffgaff,direct
+# 沃达丰
+DOMAIN-SUFFIX, 3gppnetwork.org
+DOMAIN-SUFFIX, vodafone.com
+DOMAIN-SUFFIX, ondemandconnectivity.com
+IP-CIDR,88.82.0.0/19
+# CMLinkUK EE
+IP-CIDR,46.68.0.0/17
+# Giffgaff
+IP-CIDR,87.194.0.0/16
