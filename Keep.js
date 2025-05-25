@@ -1,5 +1,5 @@
 #!name = Keep VIP
-#!icon=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/Keep.png
+#!icon=https://raw.githubusercontent.com/to889/Loon/refs/heads/Loon/Keep.png
 
 [Script]
 http-response ^https?:\/\/(api|kit).gotokeep\.com\/(nuocha|gerudo|athena|nuocha\/plans|suit\/v5\/smart|kprime\/v4\/suit\/sales)\/ script-path=https://raw.githubusercontent.com/to889/Rewrite/refs/heads/Loon/Keep.js, requires-body=true, timeout=10
