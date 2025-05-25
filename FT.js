@@ -1,4 +1,5 @@
 #!name = FT中文网
+#!icon=https://raw.githubusercontent.com/to889/Loon/refs/heads/Loon/FT.png
 
 [Script]
 # 会员解锁
