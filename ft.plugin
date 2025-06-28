@@ -3,6 +3,9 @@
 
 [Script]
 # 会员解锁
+http-response ^https?:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/(paywall|get_story_more_info) requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/cloudfront.js,tag=Cloudfront解锁
+http-response ^https?:\/\/ftmailbox\.cn\/ad_impression\/.+ script-response-body reject-200,tag=拦截广告
+
 http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js, requires-body=true, timeout=10, tag=FT中文网
 
 # 拦截广告 API 请求，防止广告加载
