@@ -3,10 +3,7 @@
 
 [Script]
 # 会员解锁
-http-response ^https?:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/(paywall|get_story_more_info) requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/cloudfront.js,tag=Cloudfront解锁
-http-response ^https?:\/\/ftmailbox\.cn\/ad_impression\/.+ script-response-body reject-200,tag=拦截广告
-
-http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js, requires-body=true, timeout=10, tag=FT中文网
+http-response ^https?:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/(paywall|get_story_more_info) requires-body=1,script-code=var ddm = JSON.parse($response.body);if(/paywall/.test($request.url)){Object.assign(ddm, {"paywall": 0,"premium": 1,"expire": "4092599349","standard": 1,"v": 2099,"campaign_code": "","latest_duration": "yearly","addon": 1});}if(/get_story_more_info/.test($request.url)){ddm.paywall = 0;ddm.accessright = "1";}$done({ body: JSON.stringify(ddm) });,tag=Cloudfront解锁
 
 # 拦截广告 API 请求，防止广告加载
 http-response ^https:\/\/www\.ftchinese\.com\/m\/ad\/(index|start).json$ reject-200
@@ -21,9 +18,11 @@ http-response ^https:\/\/securepubads\.g\.doubleclick\.net\/pagead\/ppub_config.
 [rewrite_local]
 ^https?:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/(paywall|get_story_more_info) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/cloudfront.js
 ^https?:\/\/ftmailbox\.cn\/ad_impression\/.+ url reject-200
-
+  
 [mitm]
 hostname = *.cloudfront.net, *.ftchinese.com, ads.ftchinese.com, ftmailbox.cn, securepubads.g.doubleclick.net
+
+*************************************/
 
 var ddm = JSON.parse($response.body);
 
