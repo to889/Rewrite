@@ -9,7 +9,8 @@ AutoCAD解锁 = type=http-response, pattern=^https:\/\/app\.autocad360\.com\/ent
 [Mitm]
 hostname = app.autocad360.com
 
-*/
+// AutoCAD 解锁脚本 for Loon
+
 var obj = JSON.parse($response.body);
 
 obj = {
@@ -36,4 +37,5 @@ obj = {
 };
 
 $done({ body: JSON.stringify(obj) });
+
 
