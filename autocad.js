@@ -4,8 +4,8 @@
 #!date=2025-08-01
 
 [Script]
-AutoCAD解锁 = type=http-response, pattern=^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status, requires-body=true, script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/autoCAD.js
-
+http-response ^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/autoCAD.js, requires-body=true, timeout=60, tag=AutoCAD
+  
 [Mitm]
 hostname = app.autocad360.com
 
