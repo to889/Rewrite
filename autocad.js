@@ -1,11 +1,11 @@
 #!name=AutoCAD
-#!desc=去广告解锁视频(支持Loon)
+#!desc=AutoCAD 解锁教育权限 (适配 Loon)
 #!author=T
 #!date=2025-08-01
 
 [Script]
-http-response ^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status script-path=script/autoCAD.js, requires-body=true, timeout=60, tag=AutoCAD
-  
+http-response ^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/autoCAD.js, requires-body=true, timeout=60, tag=AutoCAD
+
 [Mitm]
 hostname = app.autocad360.com
 
@@ -37,3 +37,4 @@ obj = {
 };
 
 $done({ body: JSON.stringify(obj) });
+
