@@ -1,5 +1,5 @@
 #!name = PSExpress VIP
-#!icon=https://raw.githubusercontent.com/to889/Loon/refs/heads/Loon/PSExpress.png
+#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/PSExpress.png
 
 [Script]
 http-response https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/PSExpress.js, requires-body=true, timeout=10
@@ -74,3 +74,4 @@ var objc = {
 };
 
 $done({ body: JSON.stringify(objc) });
+
