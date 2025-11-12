@@ -1,6 +1,5 @@
 #!name=AutoCAD
-#!desc=AutoCAD 解锁教育权限 (适配 Loon)
-#!author=T
+#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/Sam.png
 #!date=2025-08-01
 
 [Script]
