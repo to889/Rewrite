@@ -1,5 +1,5 @@
 #!name = 扫描全能王VIP
-#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/CamScanner.png
+#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/icon/CamScanner.png
 
 [Script]
 http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com)\/(purchase\/cs\/query_property|queryProperty|getPrivilegeItem) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, timeout=10, tag=CamScanner VIP Unlock
@@ -183,6 +183,7 @@ chxm1023.data.data = {
 }
 
 $done({body : JSON.stringify(chxm1023)});
+
 
 
 
