@@ -1,5 +1,5 @@
 #!name=AutoCAD
-#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/Sam.png
+#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/AutoCAD.png
 #!date=2025-08-01
 
 [Script]
