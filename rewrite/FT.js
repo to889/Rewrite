@@ -1,5 +1,5 @@
 #!name = FT中文网
-#!icon=https://raw.githubusercontent.com/to889/Loon/refs/heads/Loon/FT.png
+#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/FT.png
 
 [Script]
 # 会员解锁
@@ -33,3 +33,4 @@ baby = {
 };
 
 $done({ body: JSON.stringify(baby) });
+
