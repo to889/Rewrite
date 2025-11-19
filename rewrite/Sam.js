@@ -1,5 +1,5 @@
 #!name = Sam's
-#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/Sam.png
+#!icon= https://raw.githubusercontent.com/Wmaliva/Loon/refs/heads/Loon/icon/IMG_2921.png
 
 [Rewrite]
 ^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get) - reject
@@ -12,4 +12,5 @@
 
 [MITM]
 hostname = api-sams.walmartmobile.cn
+
 
