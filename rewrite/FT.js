@@ -1,9 +1,9 @@
 #!name = FT中文网
-#!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/FT.png
+#!icon= https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/FT.png
 
 [Script]
 # 会员解锁
-http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js, requires-body=true, timeout=10, tag=FT中文网
+http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall script-path=https://raw.githubusercontent.com/Wmaliva/Loon/refs/heads/Loon/rewrite/FT.js, requires-body=true, timeout=10, tag=FT中文网
 
 # 拦截广告 API 请求，防止广告加载
 http-response ^https:\/\/www\.ftchinese\.com\/m\/ad\/(index|start).json$ reject-200
@@ -18,7 +18,7 @@ http-response ^https:\/\/securepubads\.g\.doubleclick\.net\/pagead\/ppub_config.
 [Mitm]
 hostname = *.cloudfront.net, *.ftchinese.com, ads.ftchinese.com, ftmailbox.cn, securepubads.g.doubleclick.net
 
-
+*******************************/
 var baby = JSON.parse($response.body);
 
 baby = {
