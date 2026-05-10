@@ -3,7 +3,7 @@
 
 [Script]
 # 会员解锁
-http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall url script-response-body script-path= https://raw.githubusercontent.com/Wmaliva/Loon/refs/heads/Loon/rewrite/FT.js, requires-body=true, timeout=10, tag=FT中文网
+http-response ^https:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/paywall url script-response-body script-path=https://raw.githubusercontent.com/Wmaliva/Loon/refs/heads/Loon/rewrite/FT.js, requires-body=true, timeout=10, tag=FT中文网
 
 # 拦截广告 API 请求，防止广告加载
 http-response ^https:\/\/www\.ftchinese\.com\/m\/ad\/(index|start).json$ reject-200
