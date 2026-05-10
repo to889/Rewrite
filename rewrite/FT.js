@@ -33,4 +33,3 @@ baby = {
 };
 
 $done({ body: JSON.stringify(baby) });
-
