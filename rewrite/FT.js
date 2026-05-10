@@ -1,5 +1,5 @@
 #!name = FT中文网
-#!icon= https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/FT.png
+#!icon= https://raw.githubusercontent.com/Wmaliva/Loon/refs/heads/Loon/icon/FT.png
 
 [Script]
 # 会员解锁
