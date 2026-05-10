@@ -2,7 +2,7 @@
 #!icon=https://raw.githubusercontent.com/Wmaliva/Loon/blob/Loon/icon/BaiduCloud.png
 
 [Script]
-http-response ^https?:\/\/pan\.baidu\.com\/(act\/.+\/(activityentry|bchannel|cardwelfare|skin)|rest\/.+\/(membership\/user|pcs\/adv)|feed\/cardinfos|api\/(user\/getinfo|quota|loginstatus|account\/getprivilege)|buy\/ad\/conf|wap\/vip|coins\/taskcenter\/homensr) script-path=https://raw.githubusercontent.com/Wmaliva/Loon/refs/heads/Loon/rewrite/BaiduCloud.js, requires-body=true, timeout=10
+http-response ^https?:\/\/pan\.baidu\.com\/(act\/.+\/(activityentry|bchannel|cardwelfare|skin)|rest\/.+\/(membership\/user|pcs\/adv)|feed\/cardinfos|api\/(user\/getinfo|quota|loginstatus|account\/getprivilege)|buy\/ad\/conf|wap\/vip|coins\/taskcenter\/homensr) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js, requires-body=true, timeout=10
 
 [Mitm]
 hostname = pan.baidu.com
