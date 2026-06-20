@@ -2,17 +2,12 @@
 # AUTHOR: Wmaliva
 # REPO: https://github.com/Wmaliva/Loon/edit/Loon/rule
 # UPDATED: 2026-06
-# DOMAIN-SUFFIX: 12
-# TOTAL: 12
-DOMAIN,gdmf.apple.com
-DOMAIN,updates.cdn-apple.com
-DOMAIN-SUFFIX,browserscan.net
-DOMAIN-SUFFIX,hotmail.com
-DOMAIN-SUFFIX,rohos.com
-DOMAIN-SUFFIX,tktn.be
-DOMAIN-SUFFIX,talkatone.com
-DOMAIN-SUFFIX,ping0.cc
-DOMAIN-SUFFIX,imap.qq.com
-DOMAIN-SUFFIX,ls.apple.com
-DOMAIN-SUFFIX,statcounter.com
-DOMAIN-SUFFIX,techpowerup.com
+# DOMAIN-SUFFIX: 7
+# TOTAL: 7
+DOMAIN,818899.xyz
+DOMAIN,adashbc.ut.taobao.com
+DOMAIN,adashxgc.ut.taobao.com
+DOMAIN,sdk.open.talk.gepush.com
+DOMAIN-SUFFIX,i-lq.snssdk.com
+URL-REGEX,https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
+URL-REGEX,https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/
