@@ -1,21 +1,18 @@
-# NAME: 12306
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:30
-# DOMAIN-SUFFIX: 15
-# TOTAL: 15
-DOMAIN-SUFFIX,12306.cn
-DOMAIN-SUFFIX,95306.cn
-DOMAIN-SUFFIX,95572.com
-DOMAIN-SUFFIX,china-railway.com.cn
-DOMAIN-SUFFIX,china-ric.com
-DOMAIN-SUFFIX,crct.com
-DOMAIN-SUFFIX,cre.cn
-DOMAIN-SUFFIX,crecc.com.cn
-DOMAIN-SUFFIX,creip.cn
-DOMAIN-SUFFIX,crscl.com.cn
-DOMAIN-SUFFIX,gzrailway.com.cn
-DOMAIN-SUFFIX,nntlj.com
-DOMAIN-SUFFIX,peoplerail.com
-DOMAIN-SUFFIX,rails.cn
-DOMAIN-SUFFIX,tdpress.com
+# NAME: ZDY-REJECT
+# AUTHOR: Wmaliva
+# REPO: https://github.com/Wmaliva/Loon/edit/Loon/rule
+# UPDATED: 2026-06
+# DOMAIN-SUFFIX: 12
+# TOTAL: 12
+DOMAIN,gdmf.apple.com
+DOMAIN-SUFFIX,browserscan.net
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,rohos.com
+DOMAIN-SUFFIX,updates.cdn-apple.com
+DOMAIN-SUFFIX,tktn.be
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,ping0.cc
+DOMAIN-SUFFIX,imap.qq.com
+DOMAIN-SUFFIX,ls.apple.com
+DOMAIN-SUFFIX,statcounter.com
+DOMAIN-SUFFIX,techpowerup.com
