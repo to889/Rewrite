@@ -1,21 +1,53 @@
-# NAME: 12306
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:17:30
-# DOMAIN-SUFFIX: 15
-# TOTAL: 15
-DOMAIN-SUFFIX,12306.cn
-DOMAIN-SUFFIX,95306.cn
-DOMAIN-SUFFIX,95572.com
-DOMAIN-SUFFIX,china-railway.com.cn
-DOMAIN-SUFFIX,china-ric.com
-DOMAIN-SUFFIX,crct.com
-DOMAIN-SUFFIX,cre.cn
-DOMAIN-SUFFIX,crecc.com.cn
-DOMAIN-SUFFIX,creip.cn
-DOMAIN-SUFFIX,crscl.com.cn
-DOMAIN-SUFFIX,gzrailway.com.cn
-DOMAIN-SUFFIX,nntlj.com
-DOMAIN-SUFFIX,peoplerail.com
-DOMAIN-SUFFIX,rails.cn
-DOMAIN-SUFFIX,tdpress.com
+# NAME: ZDY-JP
+# AUTHOR: Wmaliva
+# REPO: https://github.com/Wmaliva/Loon/edit/Loon/rule
+# UPDATED: 2026-06
+# DOMAIN-SUFFIX: 47
+# TOTAL: 47
+DOMAIN,access.818899.xyz
+DOMAIN-SUFFIX,dm84.tv
+DOMAIN-SUFFIX,hoover.org
+DOMAIN-SUFFIX,seagmcdn.com
+DOMAIN-SUFFIX,seagm.com
+DOMAIN-SUFFIX,ccega7r0yph8.com
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,scorecardresearch.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,herokuapp.com
+DOMAIN-SUFFIX,z-lib.sk
+DOMAIN-SUFFIX,inoreader.com
+DOMAIN-SUFFIX,xvideos.com
+DOMAIN-SUFFIX,similarweb.com
+DOMAIN-SUFFIX,chinaaid.net
+DOMAIN-SUFFIX,voanews.com
+DOMAIN-SUFFIX,voachinese.com
+DOMAIN-SUFFIX,freedom.gov
+DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,unpljks.top
+DOMAIN-SUFFIX,ntdtv.com
+DOMAIN-SUFFIX,transparency.org
+DOMAIN-SUFFIX,dw.com
+DOMAIN-SUFFIX,openwrt.org
+DOMAIN-SUFFIX,threads.com
+DOMAIN-SUFFIX,tw
+DOMAIN-SUFFIX,fqkeji.net
+DOMAIN-SUFFIX,proxyrack.com
+DOMAIN-SUFFIX,whoer.net
+DOMAIN-SUFFIX,ipjiance.com
+DOMAIN-SUFFIX,webshare.io
+DOMAIN-SUFFIX,chinalawtranslate.com
+DOMAIN-SUFFIX,deluxhost.net
+DOMAIN-SUFFIX,is.gd
+DOMAIN-SUFFIX,archive.org
+DOMAIN-SUFFIX,bewild.ai
+DOMAIN-SUFFIX,cpu-monkey.com
+DOMAIN-SUFFIX,freedomhouse.org
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,kelee.one
+DOMAIN-SUFFIX,matrix.org
+DOMAIN-SUFFIX,nextcloud.com
+DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,nsloon.app
+DOMAIN-SUFFIX,raindrop.io
+DOMAIN-SUFFIX,safebrowsing.apple
+DOMAIN-SUFFIX,xn--ck8h.com
