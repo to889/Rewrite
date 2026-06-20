@@ -5,10 +5,10 @@
 # DOMAIN-SUFFIX: 12
 # TOTAL: 12
 DOMAIN,gdmf.apple.com
+DOMAIN,updates.cdn-apple.com
 DOMAIN-SUFFIX,browserscan.net
 DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,rohos.com
-DOMAIN-SUFFIX,updates.cdn-apple.com
 DOMAIN-SUFFIX,tktn.be
 DOMAIN-SUFFIX,talkatone.com
 DOMAIN-SUFFIX,ping0.cc
