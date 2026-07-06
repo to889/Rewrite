@@ -28,6 +28,9 @@ IP-CIDR,120.52.83.22
 IP-CIDR,36.110.181.150
 IP-CIDR,39.156.62.242
 #
+# Pingan
+IP-CIDR,198.18.0.9
+#
 # SDK
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN,sdk.open.talk.gepush.com
