@@ -4,10 +4,30 @@
 # UPDATED: 2026-06
 # DOMAIN-SUFFIX: 7
 # TOTAL: 7
+#
+# VPS
 DOMAIN,818899.xyz
-DOMAIN,adashbc.ut.taobao.com
-DOMAIN,adashxgc.ut.taobao.com
+#
+# Baidu
+DOMAIN-SUFFIX,pop.pcsnetwork.netdisk.baidu.com
+DOMAIN-SUFFIX,update.pan.baidu.com
+IP-CIDR,180.76.76.200
+IP-CIDR,157.0.146.109
+URL-REGEX,^https?:\/\/pop\.pcsnetwork\.netdisk\.baidu\.com\/
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/\d+(\.\d+)?\/pcs\/adv
+#
+# SDK
+DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN,sdk.open.talk.gepush.com
 DOMAIN-SUFFIX,i-lq.snssdk.com
+#
+# Taobao
+DOMAIN,adashbc.ut.taobao.com
+DOMAIN,adashxgc.ut.taobao.com
+#
+# Spotify
+URL-REGEX,^https?:\/\/.*spotify\.com.*\/leavebehinds\/ads
+URL-REGEX,^https?:\/\/.*spotify\.com\/ads
+URL-REGEX,^https?:\/\/.*spotify\.com\/ad-logic
 URL-REGEX,https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
 URL-REGEX,https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/
