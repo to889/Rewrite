@@ -18,6 +18,16 @@ URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/\d+(\.\d+)?\/pcs\/adv
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/basembox
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/imbox
 #
+# Jingdong
+IP-CIDR6,2402:db40:5100:1011::5
+IP-CIDR,101.124.19.122
+IP-CIDR,106.39.169.89
+IP-CIDR,111.13.29.201
+IP-CIDR,111.206.228.248
+IP-CIDR,120.52.83.22
+IP-CIDR,36.110.181.150
+IP-CIDR,39.156.62.242
+#
 # SDK
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN,sdk.open.talk.gepush.com
