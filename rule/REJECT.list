@@ -64,7 +64,9 @@ URL-REGEX,^https:\/\/.*spotify\.com\/ad-(config|targeting|personalization)\/
 # 广告上报
 URL-REGEX,^https:\/\/.*spotify\.com\/ad-(impression|click)\/
 # 行为上报
+URL-REGEX,^https:\/\/guc3-spclient\.spotify\.com\/gabo-receiver-service\/
 URL-REGEX,^https:\/\/.*spclient\.spotify\.com\/gabo-receiver-service\/
+URL-REGEX,^https:\/\/guc3-spclient\.spotify\.com\/herodotus\/
 URL-REGEX,^https:\/\/.*spclient\.spotify\.com\/herodotus\/
 # 网络检测
 URL-REGEX,^https:\/\/spclient\.wg\.spotify\.com\/reachability\/
