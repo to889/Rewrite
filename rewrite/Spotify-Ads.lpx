@@ -13,11 +13,42 @@ AND,((DOMAIN-SUFFIX, spotify.com), (PROTOCOL, QUIC)),REJECT
 DOMAIN,aet.spotify.com,REJECT
 
 [Rewrite]
-^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize header-del if-none-match
-^https:\/\/(spclient\.wg|.*-spclient)\.spotify\.com(:443)?\/pendragon reject-dict
+# Ads完整拦截
+^https:\/\/.*spotify\.com\/ads\/ reject
+^https:\/\/.*spotify\.com\/ad-logic\/ reject
+^https:\/\/.*spotify\.com\/ad-events\/ reject
+
+# 播客广告
+^https:\/\/.*spotify\.com\/podcast-.*\/ads\/ reject
+^https:\/\/.*spotify\.com\/ad-insert\/ reject
+^https:\/\/.*spotify\.com\/dynamic-ad\/ reject
+
+# 广告策略
+^https:\/\/.*spotify\.com\/ad-config\/ reject
+^https:\/\/.*spotify\.com\/ad-targeting\/ reject
+^https:\/\/.*spotify\.com\/ad-personalization\/ reject
+
+# 广告上报
+^https:\/\/.*spotify\.com\/ad-impression\/ reject
+^https:\/\/.*spotify\.com\/ad-click\/ reject
+
+# 上报
+^https:\/\/guc3-spclient\.spotify\.com\/gabo-receiver-service\/.* reject
+^https:\/\/guc3-spclient\.spotify\.com\/herodotus\/.* reject
+
+# 网络检测
+^https:\/\/spclient\.wg\.spotify\.com\/reachability\/check reject
+
+# 网络评估
+^https:\/\/guc3-spclient\.spotify\.com\/net-fortune\/.* reject
+
 #自用添加
 ^https:\/\/guc3-spclient\.spotify\.com\/ads\/.* reject
 ^https:\/\/guc3-spclient\.spotify\.com\/.*\/ads\/.* reject
+
+#以下为原库脚本
+^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize header-del if-none-match
+^https:\/\/(spclient\.wg|.*-spclient)\.spotify\.com(:443)?\/pendragon reject-dict
 
 #屏蔽播放界面的探索内容显示，凭个人喜好开关
 ^https:\/\/(spclient\.wg|.*-spclient)\.spotify\.com(:443)?\/watch-feed-entrypoints\/v.\/discovery-from-seed reject-dict
