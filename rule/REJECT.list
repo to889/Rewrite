@@ -48,3 +48,25 @@ URL-REGEX,^https:\/\/guc3-spclient\.spotify\.com(:443)?\/ads\/v3\/ads
 URL-REGEX,^https:\/\/guc3-spclient\.spotify\.com(:443)?\/ad-logic\/
 URL-REGEX,https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
 URL-REGEX,https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/
+# Ads完整拦截
+URL-REGEX,^https:\/\/.*spotify\.com\/ads\/
+URL-REGEX,^https:\/\/.*spotify\.com\/ad-logic\/
+URL-REGEX,^https:\/\/.*spotify\.com\/ad-events\/
+URL-REGEX,https:\/\/guc3-spclient\.spotify\.com\/ads\/
+URL-REGEX,https:\/\/guc3-spclient\.spotify\.com\/.*\/ads\/
+# 播客广告
+URL-REGEX,^https:\/\/.*spotify\.com\/podcast-.*\/ads\/
+URL-REGEX,^https:\/\/.*spotify\.com\/ad-insert\/
+URL-REGEX,^https:\/\/.*spotify\.com\/dynamic-ad\/
+# 广告策略
+# ===== Ads Config（优化） =====
+URL-REGEX,^https:\/\/.*spotify\.com\/ad-(config|targeting|personalization)\/
+# 广告上报
+URL-REGEX,^https:\/\/.*spotify\.com\/ad-(impression|click)\/
+# 行为上报
+URL-REGEX,^https:\/\/.*spclient\.spotify\.com\/gabo-receiver-service\/
+URL-REGEX,^https:\/\/.*spclient\.spotify\.com\/herodotus\/
+# 网络检测
+URL-REGEX,^https:\/\/spclient\.wg\.spotify\.com\/reachability\/
+# 网络评估
+URL-REGEX,^https:\/\/.*spclient\.spotify\.com\/net-fortune\/
